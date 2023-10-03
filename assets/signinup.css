@@ -1,0 +1,141 @@
+@import url(geral.css);
+
+
+
+
+
+body {
+    background-image: url(images/background-movies-series.png);
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: transparent;
+    padding-top: 70px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    width: 100%;
+}
+.content{
+    color: white;
+    padding: 40px;
+    background-color: #ffffff10;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 800px;
+}
+.content h1{
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.content p{
+    margin: 15px 0px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    color: white;
+    font-family: Raleway;
+    font-size: 1rem;
+}
+input::placeholder{
+    font-family: Raleway;
+    color: #c4c4c4;
+    font-size: 1rem;
+}
+.content form div{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: var(--row-column) wrap;
+}
+.content form div a:nth-of-type(1) button{
+    padding: 15px 40px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-image: var(--btn-bg-color-gradient);
+    background-color: transparent;
+    border: none;
+    transition: backgroud-image 2s, outline 1s, transform 1s;
+    outline: 2px solid transparent;
+}
+.content form div a:nth-of-type(1) button:hover{
+    background-image: linear-gradient(45deg,
+    #9b34ef,
+    #490cb0,
+    transparent 1%);
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.1);
+}
+.content form div a:nth-of-type(2) button{
+    padding: 15px 40px;
+    color: var(--link-color);
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.content form input:invalid{
+    border: 1px solid #ff4c4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    :root {
+        --row-column: column;
+        --none-center: center;
+        --end-center: center;
+        --img-height: 15px;
+        --img-margin: 15px 0px;
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    footer div:nth-child(1) {
+        gap: 15px 30px;
+    }
+    .content form div a:nth-of-type(2) button{
+        padding: 15px 0px;
+    }
+    main{
+        padding-top: 130px;
+    }
+
+
+}
